@@ -1,4 +1,4 @@
-package io.github.javajump3r.mod;
+package io.github.javajump3r.modid;
 
 import net.fabricmc.api.ClientModInitializer;
 
