@@ -20,6 +20,9 @@
   "entrypoints": {
     "client": [
       "io.github.javajump3r.modid.ModInit"
+    ],
+    "modmenu": [
+      "io.github.javajump3r.ModMenuIntegration"
     ]
   },
   "mixins": [
