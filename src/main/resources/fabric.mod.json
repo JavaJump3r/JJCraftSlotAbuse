@@ -1,10 +1,10 @@
 {
   "schemaVersion": 1,
-  "id": "modid",
+  "id": "jjcraftslotabuse",
   "version": "${version}",
 
-  "name": "LavaJumper Module Template",
-  "description": "Mod template for JavaJumper's mods",
+  "name": "JJCraftSlotAbuse",
+  "description": "Use crafting slots as extra inventory which is also cannot be seen in some /invsee plugins. Install LavaJumper core to be able to configure this mod",
   "authors": [
     "JavaJumper"
   ],
@@ -14,26 +14,28 @@
   },
 
   "license": "GPL v3",
-  "icon": "assets/modid/icon.png",
+  "icon": "assets/jjcraftslotabuse/icon.png",
 
   "environment": "*",
   "entrypoints": {
     "client": [
-      "io.github.javajump3r.modid.ModInit"
+      "io.github.javajump3r.jjcraftslotabuse.CraftSlotAbuseInit"
     ],
     "modmenu": [
       "io.github.javajump3r.ModMenuIntegration"
     ]
   },
   "mixins": [
-    "modid.mixins.json"
+    "jjcraftslotabuse.mixins.json"
   ],
 
   "depends": {
     "fabricloader": ">=0.14.14",
     "fabric-api": "*",
     "minecraft": "~1.19.3",
-    "java": ">=17",
+    "java": ">=17"
+  },
+  "suggests" : {
     "lavajumper-core" :"*"
   },
   "custom": {
